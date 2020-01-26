@@ -14,3 +14,7 @@ struct ErrorMessage {
     static let noDataMessage = "Somthing went wrong, No data fetched"
     static let defaultErroeMessage = "Somthing went wrong"
 }
+
+struct URLString {
+    static let listOfCustomers = "https://s3.amazonaws.com/intercom-take-home-test/customers.txt"
+}
