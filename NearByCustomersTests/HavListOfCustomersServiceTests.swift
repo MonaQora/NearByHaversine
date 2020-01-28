@@ -9,7 +9,7 @@
 import XCTest
 @testable import NearByCustomers
 
-class HavListOfCustomersServiceTests: XCTestCase {
+class ListOfCustomersServiceTests: XCTestCase {
     var service: ListOfCustomersServiceProtocol!
     
     override func setUp() {

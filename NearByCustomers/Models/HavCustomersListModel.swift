@@ -37,7 +37,7 @@ extension CustomersListModel: BaseListModelProtocol {
         return customer as? T
     }
     
-    func findNearByCustomers(completion: @escaping ([Customer]?) -> Void) {
+    func findNearByCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> Void) {
         var customersNearByList = [Customer]()
         for customer in customersList {
             let customerLat = Double(customer.latitude)
@@ -49,6 +49,11 @@ extension CustomersListModel: BaseListModelProtocol {
                 }
             }
         }
-        completion(customersNearByList)
+        if customersNearByList.count > 0 {
+            completion(customersNearByList, nil)
+        }
+        else {
+            completion(nil, ErrorResponse.custom(string: ErrorMessage.noNearCustomers))
+        }
     }
 }

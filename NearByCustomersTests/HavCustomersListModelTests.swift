@@ -9,7 +9,7 @@
 import XCTest
 @testable import NearByCustomers
 
-class HavCustomersListModelTests: XCTestCase {
+class CustomersListModelTests: XCTestCase {
     private var customersListModel: CustomersListModel?
     private var service: ListOfCustomersServiceMock!
 
@@ -82,20 +82,24 @@ class HavCustomersListModelTests: XCTestCase {
     
     func testGetListOfNearByCustomerSuccess() {
         let expectation = XCTestExpectation(description: "Sucess load list of near by customers")
-        var nearCustomersListResponse = [Customer]()
+        var nearCustomersListResponse: [Customer]?
+        var errorResponse: ErrorResponse?
         customersListModel?.fetchListInfo { _, _ in
-            self.customersListModel?.findNearByCustomers { nearByList in
+            self.customersListModel?.findNearByCustomers { nearByList,error  in
                 nearCustomersListResponse = nearByList!
+                errorResponse = error
                 expectation.fulfill()
             }
         }
         
         wait(for: [expectation], timeout: 20.0)
-        XCTAssertEqual(nearCustomersListResponse.count, 4)
-        XCTAssertEqual(nearCustomersListResponse[0].userID, 0)
-        XCTAssertEqual(nearCustomersListResponse[1].userID, 2)
-        XCTAssertEqual(nearCustomersListResponse[2].userID, 5)
-        XCTAssertEqual(nearCustomersListResponse[3].userID, 7)
+        XCTAssertNil(errorResponse)
+        XCTAssertNotNil(nearCustomersListResponse)
+        XCTAssertEqual(nearCustomersListResponse?.count, 4)
+        XCTAssertEqual(nearCustomersListResponse?[0].userID, 0)
+        XCTAssertEqual(nearCustomersListResponse?[1].userID, 2)
+        XCTAssertEqual(nearCustomersListResponse?[2].userID, 5)
+        XCTAssertEqual(nearCustomersListResponse?[3].userID, 7)
     }
 }
 

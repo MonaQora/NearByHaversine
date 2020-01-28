@@ -12,4 +12,10 @@ protocol BaseListModelProtocol {
     func fetchListInfo(completion: @escaping (AnyObject?, ErrorResponse?) -> Void)
     func numberOfRowsAt(section: Int) -> Int
     func modelAt<T>(index: Int) -> T?
+    func findNearByCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> Void)
+}
+
+extension BaseListModelProtocol {
+    func findNearByCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> Void) {
+    }
 }
