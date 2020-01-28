@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomerDetailsCell" rowHeight="100" id="957-bW-CDA" customClass="CustomerDetailsCell" customModule="NearByCustomers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="957-bW-CDA" id="kSf-dT-wIu">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-wj-je5">
+                        <rect key="frame" x="30" y="16" width="354" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7gR-kp-ec6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMH-O3-yJr">
+                        <rect key="frame" x="30" y="66" width="354" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="pwI-Ks-64S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.19125025000000001" green="0.045821537459999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QBW-wj-je5" firstAttribute="top" secondItem="kSf-dT-wIu" secondAttribute="topMargin" constant="5" id="AcT-d3-7d1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QBW-wj-je5" secondAttribute="trailing" constant="10" id="Ch0-Zo-wwb"/>
+                    <constraint firstItem="QBW-wj-je5" firstAttribute="leading" secondItem="kSf-dT-wIu" secondAttribute="leadingMargin" constant="10" id="I7x-uX-4xt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kMH-O3-yJr" secondAttribute="bottom" constant="2" id="hcH-Il-Vkj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kMH-O3-yJr" secondAttribute="trailing" constant="10" id="llJ-QN-JxT"/>
+                    <constraint firstItem="kMH-O3-yJr" firstAttribute="leading" secondItem="kSf-dT-wIu" secondAttribute="leadingMargin" constant="10" id="qGm-4A-oAN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="locationLabel" destination="kMH-O3-yJr" id="fNH-kz-rcQ"/>
+                <outlet property="userNameLabel" destination="QBW-wj-je5" id="nfd-Qw-U5m"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>

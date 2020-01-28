@@ -13,6 +13,9 @@ struct Customer: Codable {
     let userID: Int
     let name: String
     let longitude: String
+    var customerLocation: String {
+        return "lat: \(latitude), long: \(longitude)"
+    }
     
     private enum CodingKeys: String, CodingKey {
         case latitude = "latitude"
