@@ -18,3 +18,9 @@ struct ErrorMessage {
 struct URLString {
     static let listOfCustomers = "https://s3.amazonaws.com/intercom-take-home-test/customers.txt"
 }
+
+struct Earth {
+    static let radius = 6356.752
+    static let officeLat = 53.339428
+    static let officeLon = -6.257664
+}
