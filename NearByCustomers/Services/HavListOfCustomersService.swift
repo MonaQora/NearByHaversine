@@ -8,7 +8,11 @@
 
 import Foundation
 
-class ListOfCustomersService {
+protocol ListOfCustomersServiceProtocol {
+    func loadListOfCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> ())
+}
+
+class ListOfCustomersService: ListOfCustomersServiceProtocol {
     func loadListOfCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> ()) {
         let url = URLString.listOfCustomers
         let customerResource = ResourceList<Customer>(urlString: url) { data in

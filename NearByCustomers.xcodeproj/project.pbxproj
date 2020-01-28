@@ -13,7 +13,6 @@
 		484534C123DE28C200513C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484534BF23DE28C200513C48 /* Main.storyboard */; };
 		484534C323DE28C300513C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484534C223DE28C300513C48 /* Assets.xcassets */; };
 		484534C623DE28C300513C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484534C423DE28C300513C48 /* LaunchScreen.storyboard */; };
-		484534D123DE28C400513C48 /* NearByCustomersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534D023DE28C400513C48 /* NearByCustomersTests.swift */; };
 		484534E223DE526400513C48 /* HavServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534E123DE526400513C48 /* HavServiceClient.swift */; };
 		484534E723DE53A900513C48 /* HavServiceReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534E623DE53A900513C48 /* HavServiceReponse.swift */; };
 		484534EA23DE53E200513C48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534E923DE53E200513C48 /* Constants.swift */; };
@@ -43,7 +42,6 @@
 		484534C523DE28C300513C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484534C723DE28C300513C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484534CC23DE28C400513C48 /* NearByCustomersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearByCustomersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		484534D023DE28C400513C48 /* NearByCustomersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByCustomersTests.swift; sourceTree = "<group>"; };
 		484534D223DE28C400513C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484534E123DE526400513C48 /* HavServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavServiceClient.swift; sourceTree = "<group>"; };
 		484534E623DE53A900513C48 /* HavServiceReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavServiceReponse.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 		484534CF23DE28C400513C48 /* NearByCustomersTests */ = {
 			isa = PBXGroup;
 			children = (
-				484534D023DE28C400513C48 /* NearByCustomersTests.swift */,
 				484534F323DE57BB00513C48 /* HavListOfCustomersServiceTests.swift */,
 				484534D223DE28C400513C48 /* Info.plist */,
 			);
@@ -294,7 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				484534F423DE57BB00513C48 /* HavListOfCustomersServiceTests.swift in Sources */,
-				484534D123DE28C400513C48 /* NearByCustomersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
