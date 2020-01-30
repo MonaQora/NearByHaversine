@@ -18,7 +18,7 @@ After exploring different ways of Great-Circle distance calculation laws, I find
 2) Run the app
 3) First screen contains list of customer from https://s3.amazonaws.com/intercom-take-home-test/customers.txt
 4) Press "Find Nearby Customer"
-5) Will take you to list of near by customers after find them
+5) Will take you to list of nearby customers after find them
 
 ## HavarsineDistance Class
 
