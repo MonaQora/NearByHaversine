@@ -30,4 +30,4 @@ It contains the data coming from url https://s3.amazonaws.com/intercom-take-home
 
 ## Unit tests
 
-Included at NearByCustomersTests folder
+Included on NearByCustomersTests folder
