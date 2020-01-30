@@ -56,7 +56,6 @@ extension CustomersListViewController: BaseViewProtocol {
     }
     
     func navigateToListOfNearbyCustomersList(_ nearbyCustomers:[Customer]) {
-        print(nearbyCustomers)
         let nearbyCustomerVC = storyboard!.instantiateViewController(withIdentifier: "NearbyCustomersList") as! NearbyCustomersListViewController
         nearbyCustomerVC.customersList = nearbyCustomers
         self.navigationController?.pushViewController(nearbyCustomerVC, animated: true)
