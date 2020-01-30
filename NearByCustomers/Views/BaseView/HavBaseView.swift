@@ -17,7 +17,17 @@ protocol BaseViewProtocol {
 
 class BaseViewController: UIViewController {
     var loadingIndicator = UIActivityIndicatorView()
-
+    
+    func setupErrorHandling(message: String) {
+        self.setupAlertView(title: ErrorMessage.errorTitle, message: message, buttonTitle: ErrorMessage.closeButton)
+    }
+    
+    func setActivityIndicator(hidden: Bool) {
+        DispatchQueue.main.async {
+            self.setupActivityIndicator(hidden: hidden)
+        }
+    }
+    
     func setupAlertView(title: String, message: String, buttonTitle: String) {
             let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertView.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: nil))
