@@ -13,11 +13,13 @@ class NearbyCustomersListModelTests: XCTestCase {
     private var nearbyCustomersListModel: NearbyCustomersListModel?
 
     override func setUp() {
+        super.setUp()
         let nearbyList = [Customer.init(latitude: "52.986375", userID: 0, name: "Mona Qora", longitude: "-6.043701"),  Customer.init(latitude: "53.038056", userID: 2, name: "Koka Qora", longitude: "-7.653889")]
         nearbyCustomersListModel = NearbyCustomersListModel.init(customersList: nearbyList)
     }
 
     override func tearDown() {
+        super.tearDown()
         nearbyCustomersListModel = nil
     }
 

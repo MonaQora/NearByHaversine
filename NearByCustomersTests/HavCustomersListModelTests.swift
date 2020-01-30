@@ -14,12 +14,14 @@ class CustomersListModelTests: XCTestCase {
     private var service: ListOfCustomersServiceMock!
 
     override func setUp() {
+        super.setUp()
         service = ListOfCustomersServiceMock()
         customersListModel = CustomersListModel()
         customersListModel?.service = service
     }
 
     override func tearDown() {
+        super.tearDown()
         customersListModel = nil
         service = nil
     }
@@ -69,7 +71,7 @@ class CustomersListModelTests: XCTestCase {
         XCTAssertEqual(customersListModel?.numberOfRowsAt(section: 0), 8)
     }
     
-    func testmodelAtReturnRightModel() {
+    func testModelAtReturnRightModel() {
         let expectation = XCTestExpectation(description: "Sucess return right customer")
         customersListModel?.fetchListInfo {_, _ in
             expectation.fulfill()

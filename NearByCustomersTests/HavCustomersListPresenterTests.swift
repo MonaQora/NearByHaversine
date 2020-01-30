@@ -16,12 +16,14 @@ class CustomersListPresenterTests: XCTestCase {
     private var model : CustomersListModelMock!
     
     override func setUp() {
+        super.setUp()
         view = CustomersListViewMock()
         model = CustomersListModelMock()
         presenter = CustomersListPresenter(view: view, model: model)
     }
 
     override func tearDown() {
+        super.tearDown()
         model = nil
         view = nil
         presenter = nil
