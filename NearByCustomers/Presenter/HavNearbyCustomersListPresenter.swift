@@ -12,11 +12,22 @@ class NearbyCustomersListPresenter: BaseListViewPresnter {
 
     override init(view: BaseViewProtocol?, model: BaseListModelProtocol?) {
         super.init(view: view, model: model)
-        if let _ = self.model{
-            self.listDidLoad()
+        self.fetchListOfNearbyCustomersList()
+    }
+    
+    func fetchListOfNearbyCustomersList()  {
+        if let model = self.model{
+            model.fetchListInfo(){[weak self] listCustomers, error in
+                if listCustomers != nil {
+                    self?.listDidLoad()
+                }
+                else {
+                    self?.listDidFailLoad(error: error!)
+                }
+            }
         }
         else {
-            let error = ErrorResponse.custom(string: ErrorMessage.noDataMessage)
+            let error = ErrorResponse.custom(string: ErrorMessage.noNearCustomers)
             self.listDidFailLoad(error: error)
         }
     }

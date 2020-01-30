@@ -30,13 +30,21 @@ class NearbyCustomersListPresenterTests: XCTestCase {
     }
     
     func testPresenterLoadNearbyCustomersListSucess() {
+        presenter.fetchListOfNearbyCustomersList()
         XCTAssertTrue(view.setupViewDataHasBeenCalled)
     }
     
     func testPresenterLoadNearbyCustomersListNilModelFailure() {
         model = nil
         presenter = NearbyCustomersListPresenter(view: view, model: model)
+        presenter.fetchListOfNearbyCustomersList()
         XCTAssertTrue(view.setupErrorHandlingHasBeenCalled)
+    }
+    
+    func testPresenterWhenNoCustomerNearbyFailure() {
+        model.customersList = [Customer]()
+        presenter.fetchListOfNearbyCustomersList()
+        XCTAssertTrue(view.setupViewDataHasBeenCalled)
     }
     
     func testNumberOfRowsSuccess() {
@@ -51,9 +59,17 @@ class NearbyCustomersListPresenterTests: XCTestCase {
 }
 
 class NearbyCustomersListModelMock: BaseListModelProtocol {
+    
     var customersList = [Customer.init(latitude: "52.986375", userID: 0, name: "Mona Qora", longitude: "-6.043701"),  Customer.init(latitude: "53.038056", userID: 2, name: "Koka Qora", longitude: "-7.653889")]
+    private let errorMessage = "Somthing went wrong"
 
     func fetchListInfo(completion: @escaping (AnyObject?, ErrorResponse?) -> Void) {
+        if customersList.count > 0 {
+            completion(customersList as AnyObject?, nil)
+        }
+        else {
+            completion(nil, ErrorResponse.custom(string: errorMessage))
+        }
     }
     
     func numberOfRowsAt(section: Int) -> Int {

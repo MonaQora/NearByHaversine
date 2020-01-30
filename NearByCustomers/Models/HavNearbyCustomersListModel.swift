@@ -18,7 +18,12 @@ class NearbyCustomersListModel {
 
 extension NearbyCustomersListModel: BaseListModelProtocol {
     func fetchListInfo(completion: @escaping (AnyObject?, ErrorResponse?) -> Void) {
-        
+        if customersList.count > 0 {
+            completion(customersList as AnyObject, nil)
+        }
+        else {
+            completion(nil, ErrorResponse.custom(string: ErrorMessage.noNearCustomers))
+        }
     }
     
     func numberOfRowsAt(section: Int) -> Int {
