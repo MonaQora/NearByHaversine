@@ -27,3 +27,7 @@ It Contains how to calculate distance logic
 ## sampleCustomersList.txt && SampleNearbyCustomersList.txt
 
 It contains the data coming from url https://s3.amazonaws.com/intercom-take-home-test/customers.txt as current data refreance & list of nearby customer found using Haversine Formula
+
+## Unit tests
+
+Included at NearByCustomersTests folder
