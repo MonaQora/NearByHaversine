@@ -79,7 +79,7 @@ class CustomersListModelTests: XCTestCase {
         wait(for: [expectation], timeout: 20.0)
         let customerRow4: Customer = (customersListModel?.modelAt(index: 4))!
         XCTAssertNotNil(customerRow4)
-        XCTAssertEqual(customerRow4.userID, 4)
+        XCTAssertEqual(customerRow4.userID, 7)
     }
     
     func testGetListOfNearByCustomerSuccess() {
@@ -106,7 +106,7 @@ class CustomersListModelTests: XCTestCase {
 }
 
 class ListOfCustomersServiceMock: ListOfCustomersServiceProtocol {
-    var customersList: [Customer] = [Customer.init(latitude: "52.986375", userID: 0, name: "Mona Qora", longitude: "-6.043701"), Customer.init(latitude: "52.3191841", userID: 1, name: "Menna Gilldan", longitude: "-8.5072391"), Customer.init(latitude: "53.038056", userID: 2, name: "Koka Qora", longitude: "-7.653889"), Customer.init(latitude: "52.2559432", userID: 3, name: "Aya Gilldan", longitude: "-7.1048927"), Customer.init(latitude: "52.366037", userID: 4, name: "Mariem Qora", longitude: "-8.179118"), Customer.init(latitude: "54.0894797", userID: 5, name: "Peter Aziz", longitude: "-6.18671"),Customer.init(latitude: "54.080556", userID: 6, name: "Lobna Qora", longitude: "-8.522366"), Customer.init(latitude: "53.1302756", userID: 7, name: "Abdelrahim Ahmed", longitude: "-6.2397222")]
+    var customersList: [Customer] = [Customer.init(latitude: "53.038056", userID: 2, name: "Koka Qora", longitude: "-7.653889"), Customer.init(latitude: "52.2559432", userID: 3, name: "Aya Gilldan", longitude: "-7.1048927"), Customer.init(latitude: "52.366037", userID: 4, name: "Mariem Qora", longitude: "-8.179118"), Customer.init(latitude: "52.3191841", userID: 1, name: "Menna Gilldan", longitude: "-8.5072391"), Customer.init(latitude: "53.1302756", userID: 7, name: "Abdelrahim Ahmed", longitude: "-6.2397222"), Customer.init(latitude: "52.986375", userID: 0, name: "Mona Qora", longitude: "-6.043701"), Customer.init(latitude: "54.0894797", userID: 5, name: "Peter Aziz", longitude: "-6.18671"),Customer.init(latitude: "54.080556", userID: 6, name: "Lobna Qora", longitude: "-8.522366")]
     var successLoad = true
     let errorMessage = "Somthing went wrong"
     func loadListOfCustomers(completion: @escaping ([Customer]?, ErrorResponse?) -> ()) {

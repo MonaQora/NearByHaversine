@@ -50,7 +50,10 @@ extension CustomersListModel: BaseListModelProtocol {
             }
         }
         if customersNearByList.count > 0 {
-            completion(customersNearByList, nil)
+            let sortedList = customersNearByList.sorted {
+                $0.userID < $1.userID
+            }
+            completion(sortedList, nil)
         }
         else {
             completion(nil, ErrorResponse.custom(string: ErrorMessage.noNearCustomers))
