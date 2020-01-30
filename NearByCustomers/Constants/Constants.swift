@@ -30,4 +30,5 @@ struct Earth {
 
 struct ViewTitles {
     static let customersListViewTitle = "Customers List"
+    static let nearbyCustomersListViewTitle = "Nearby Customers List"
 }

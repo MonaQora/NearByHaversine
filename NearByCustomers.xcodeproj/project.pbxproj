@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		48379FD323E0018A00FA8C58 /* HavCustomersListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379FD223E0018A00FA8C58 /* HavCustomersListModelTests.swift */; };
-		48379FD523E017D100FA8C58 /* HavCustomersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379FD423E017D100FA8C58 /* HavCustomersListPresenter.swift */; };
-		483B96D223DFF10900269A3A /* HavCustomersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96D123DFF10900269A3A /* HavCustomersListViewController.swift */; };
 		483B96D623DFF1E900269A3A /* HavCustomerDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96D423DFF1E900269A3A /* HavCustomerDetailsCell.swift */; };
 		483B96D723DFF1E900269A3A /* CustomerDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483B96D523DFF1E900269A3A /* CustomerDetailsCell.xib */; };
 		483B96DC23DFF38000269A3A /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96DB23DFF38000269A3A /* TableViewDataSource.swift */; };
@@ -18,6 +16,8 @@
 		483B96E623DFF5F200269A3A /* HavBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96E523DFF5F200269A3A /* HavBaseModel.swift */; };
 		483B96E823DFF63A00269A3A /* HavCustomersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96E723DFF63A00269A3A /* HavCustomersListModel.swift */; };
 		483B96EB23DFFB3400269A3A /* HavarsineDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B96EA23DFFB3400269A3A /* HavarsineDistance.swift */; };
+		48410E4B23E2D35300589CA7 /* HavNearbyCustomersListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48410E4A23E2D35300589CA7 /* HavNearbyCustomersListModelTests.swift */; };
+		48410E4D23E2D54500589CA7 /* HavNearbyCustomersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48410E4C23E2D54500589CA7 /* HavNearbyCustomersListPresenterTests.swift */; };
 		484534BA23DE28C200513C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534B923DE28C200513C48 /* AppDelegate.swift */; };
 		484534BC23DE28C200513C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484534BB23DE28C200513C48 /* SceneDelegate.swift */; };
 		484534C123DE28C200513C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484534BF23DE28C200513C48 /* Main.storyboard */; };
@@ -33,6 +33,11 @@
 		484878A923E0C13C009C55E8 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878A823E0C13C009C55E8 /* BaseTableViewCell.swift */; };
 		484878AB23E0C9A3009C55E8 /* UIButton+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878AA23E0C9A3009C55E8 /* UIButton+Extenstions.swift */; };
 		484878AD23E0E85D009C55E8 /* HavCustomersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878AC23E0E85D009C55E8 /* HavCustomersListPresenterTests.swift */; };
+		484878AF23E10086009C55E8 /* HavNearbyCustomersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878AE23E10086009C55E8 /* HavNearbyCustomersListModel.swift */; };
+		484878B123E10197009C55E8 /* HavCustomersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878B023E10197009C55E8 /* HavCustomersListPresenter.swift */; };
+		484878B323E101F3009C55E8 /* HavNearbyCustomersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878B223E101F3009C55E8 /* HavNearbyCustomersListPresenter.swift */; };
+		484878B523E102CE009C55E8 /* HavCustomersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878B423E102CE009C55E8 /* HavCustomersListViewController.swift */; };
+		484878B723E102E6009C55E8 /* HavNearbyCustomersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484878B623E102E6009C55E8 /* HavNearbyCustomersListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +52,6 @@
 
 /* Begin PBXFileReference section */
 		48379FD223E0018A00FA8C58 /* HavCustomersListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomersListModelTests.swift; sourceTree = "<group>"; };
-		48379FD423E017D100FA8C58 /* HavCustomersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomersListPresenter.swift; sourceTree = "<group>"; };
-		483B96D123DFF10900269A3A /* HavCustomersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HavCustomersListViewController.swift; path = CustomersList/HavCustomersListViewController.swift; sourceTree = "<group>"; };
 		483B96D423DFF1E900269A3A /* HavCustomerDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomerDetailsCell.swift; sourceTree = "<group>"; };
 		483B96D523DFF1E900269A3A /* CustomerDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerDetailsCell.xib; sourceTree = "<group>"; };
 		483B96DB23DFF38000269A3A /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -57,6 +60,8 @@
 		483B96E523DFF5F200269A3A /* HavBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavBaseModel.swift; sourceTree = "<group>"; };
 		483B96E723DFF63A00269A3A /* HavCustomersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomersListModel.swift; sourceTree = "<group>"; };
 		483B96EA23DFFB3400269A3A /* HavarsineDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavarsineDistance.swift; sourceTree = "<group>"; };
+		48410E4A23E2D35300589CA7 /* HavNearbyCustomersListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavNearbyCustomersListModelTests.swift; sourceTree = "<group>"; };
+		48410E4C23E2D54500589CA7 /* HavNearbyCustomersListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavNearbyCustomersListPresenterTests.swift; sourceTree = "<group>"; };
 		484534B623DE28C200513C48 /* NearByCustomers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearByCustomers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484534B923DE28C200513C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484534BB23DE28C200513C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +81,11 @@
 		484878A823E0C13C009C55E8 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		484878AA23E0C9A3009C55E8 /* UIButton+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extenstions.swift"; sourceTree = "<group>"; };
 		484878AC23E0E85D009C55E8 /* HavCustomersListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomersListPresenterTests.swift; sourceTree = "<group>"; };
+		484878AE23E10086009C55E8 /* HavNearbyCustomersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavNearbyCustomersListModel.swift; sourceTree = "<group>"; };
+		484878B023E10197009C55E8 /* HavCustomersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavCustomersListPresenter.swift; sourceTree = "<group>"; };
+		484878B223E101F3009C55E8 /* HavNearbyCustomersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavNearbyCustomersListPresenter.swift; sourceTree = "<group>"; };
+		484878B423E102CE009C55E8 /* HavCustomersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavCustomersListViewController.swift; sourceTree = "<group>"; };
+		484878B623E102E6009C55E8 /* HavNearbyCustomersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HavNearbyCustomersListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,8 @@
 			children = (
 				483B96E123DFF4D100269A3A /* BaseView */,
 				483B96D823DFF23E00269A3A /* CustomCells */,
-				483B96D123DFF10900269A3A /* HavCustomersListViewController.swift */,
+				484878B423E102CE009C55E8 /* HavCustomersListViewController.swift */,
+				484878B623E102E6009C55E8 /* HavNearbyCustomersListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 				483B96DA23DFF35700269A3A /* DataSouce */,
 				483B96E423DFF5BE00269A3A /* BaseModel */,
 				483B96E723DFF63A00269A3A /* HavCustomersListModel.swift */,
+				484878AE23E10086009C55E8 /* HavNearbyCustomersListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,7 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				483B96E023DFF41600269A3A /* BasePresenter */,
-				48379FD423E017D100FA8C58 /* HavCustomersListPresenter.swift */,
+				484878B023E10197009C55E8 /* HavCustomersListPresenter.swift */,
+				484878B223E101F3009C55E8 /* HavNearbyCustomersListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -219,6 +232,8 @@
 				484534F323DE57BB00513C48 /* HavListOfCustomersServiceTests.swift */,
 				48379FD223E0018A00FA8C58 /* HavCustomersListModelTests.swift */,
 				484878AC23E0E85D009C55E8 /* HavCustomersListPresenterTests.swift */,
+				48410E4A23E2D35300589CA7 /* HavNearbyCustomersListModelTests.swift */,
+				48410E4C23E2D54500589CA7 /* HavNearbyCustomersListPresenterTests.swift */,
 				484534D223DE28C400513C48 /* Info.plist */,
 			);
 			path = NearByCustomersTests;
@@ -387,20 +402,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				484534F023DE553100513C48 /* Array+Extenstions.swift in Sources */,
+				484878B523E102CE009C55E8 /* HavCustomersListViewController.swift in Sources */,
 				483B96DC23DFF38000269A3A /* TableViewDataSource.swift in Sources */,
+				484878B723E102E6009C55E8 /* HavNearbyCustomersListViewController.swift in Sources */,
 				484534EC23DE541C00513C48 /* HavCustomerDataModel.swift in Sources */,
 				483B96DF23DFF41100269A3A /* HavBasePresenter.swift in Sources */,
 				484878A923E0C13C009C55E8 /* BaseTableViewCell.swift in Sources */,
 				483B96D623DFF1E900269A3A /* HavCustomerDetailsCell.swift in Sources */,
-				48379FD523E017D100FA8C58 /* HavCustomersListPresenter.swift in Sources */,
 				483B96E823DFF63A00269A3A /* HavCustomersListModel.swift in Sources */,
+				484878B323E101F3009C55E8 /* HavNearbyCustomersListPresenter.swift in Sources */,
 				484534E223DE526400513C48 /* HavServiceClient.swift in Sources */,
 				484534F223DE555A00513C48 /* HavListOfCustomersService.swift in Sources */,
+				484878AF23E10086009C55E8 /* HavNearbyCustomersListModel.swift in Sources */,
 				484534E723DE53A900513C48 /* HavServiceReponse.swift in Sources */,
 				484534BA23DE28C200513C48 /* AppDelegate.swift in Sources */,
 				483B96E323DFF4EB00269A3A /* HavBaseView.swift in Sources */,
 				484534BC23DE28C200513C48 /* SceneDelegate.swift in Sources */,
-				483B96D223DFF10900269A3A /* HavCustomersListViewController.swift in Sources */,
+				484878B123E10197009C55E8 /* HavCustomersListPresenter.swift in Sources */,
 				483B96E623DFF5F200269A3A /* HavBaseModel.swift in Sources */,
 				484878AB23E0C9A3009C55E8 /* UIButton+Extenstions.swift in Sources */,
 				483B96EB23DFFB3400269A3A /* HavarsineDistance.swift in Sources */,
@@ -412,7 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48410E4B23E2D35300589CA7 /* HavNearbyCustomersListModelTests.swift in Sources */,
 				484878AD23E0E85D009C55E8 /* HavCustomersListPresenterTests.swift in Sources */,
+				48410E4D23E2D54500589CA7 /* HavNearbyCustomersListPresenterTests.swift in Sources */,
 				48379FD323E0018A00FA8C58 /* HavCustomersListModelTests.swift in Sources */,
 				484534F423DE57BB00513C48 /* HavListOfCustomersServiceTests.swift in Sources */,
 			);

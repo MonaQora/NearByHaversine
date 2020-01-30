@@ -80,5 +80,36 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
+        <!--Nearby Customers List View Controller-->
+        <scene sceneID="5oS-H6-uv3">
+            <objects>
+                <viewController storyboardIdentifier="NearbyCustomersList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MUw-hJ-r7g" customClass="NearbyCustomersListViewController" customModule="NearByCustomers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7Z-pr-ric">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-F8-Ei4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GRx-F8-Ei4" firstAttribute="top" secondItem="n1A-TJ-IiN" secondAttribute="top" id="aSX-pb-7Xm"/>
+                            <constraint firstItem="GRx-F8-Ei4" firstAttribute="leading" secondItem="n1A-TJ-IiN" secondAttribute="leading" id="bpZ-1l-PzL"/>
+                            <constraint firstItem="n1A-TJ-IiN" firstAttribute="trailing" secondItem="GRx-F8-Ei4" secondAttribute="trailing" id="f3W-gb-6G6"/>
+                            <constraint firstItem="n1A-TJ-IiN" firstAttribute="bottom" secondItem="GRx-F8-Ei4" secondAttribute="bottom" id="mHk-tp-YAH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n1A-TJ-IiN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DBT-LM-sPF"/>
+                    <connections>
+                        <outlet property="tableView" destination="GRx-F8-Ei4" id="Erc-2R-g1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJk-Zd-T1B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="114"/>
+        </scene>
     </scenes>
 </document>
